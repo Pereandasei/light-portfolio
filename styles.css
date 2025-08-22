@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav{
     background-color: black;
 }
@@ -38,7 +39,7 @@ nav a:hover{
     text-decoration-color: red;
 }
 
-nav ul .menu-icon:hover{
+nav ul .menu-icon:active{
     color: red;
 }
 
@@ -120,7 +121,7 @@ h1{
     text-decoration: none;
     color: inherit;
 }
-.hero a:hover{
+.hero a:active{
     color: white;
 }
 #about{
@@ -156,14 +157,16 @@ h1{
     transition: 0.3s;
     color: white;
 }
-.text-frame .btn1:hover{
+.text-frame .btn1:active{
     background-color: white;
     color: black;
 }
 
 .text-frame a{
+    display: block;
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 .container{
     display: flex;
@@ -235,7 +238,7 @@ h1{
     margin: 1rem 0;
     transition: 0.3s;
 }
-.item button:hover{
+.item button:active{
     background-color: white;
 }
 .item a{
@@ -269,7 +272,7 @@ h1{
     border-radius: 1rem;
     margin: 2rem 0;
 }
-.contact-info a:hover{
+.contact-info a:active{
     color: white;
 }
 .contact-info a{
@@ -292,7 +295,7 @@ h1{
     margin-right: .7rem;
     transition: 0.4s;
 }
-.socials svg:hover{
+.socials svg:active{
     transform: scale(1.2);
     background-color: red;
 }
@@ -302,7 +305,15 @@ footer{
     text-align: center;
 }
 
-/* === MEDIA QUERIES FOR RESPONSIVENESS === */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+}
+
+
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column-reverse;
@@ -383,8 +394,23 @@ footer{
     font-size: 1rem;
   }
 
+  #about{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   #about p {
-    font-size: 1rem;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  #about button{
+    margin-bottom: 4px ;
+  }
+
+  #about h2{
+    font-size: 2.5rem;
+    text-align: left;
   }
 
   #services h2,
@@ -393,10 +419,25 @@ footer{
     font-size: 2rem;
   }
 
+  #project button{
+    padding: 8px;
+  }
+
   .btn,
   .btn1 {
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
   }
+
+  #footer h2{
+    font-size: 2.3rem;
+  }
 }
+
+
+
+
+
+
+
 
